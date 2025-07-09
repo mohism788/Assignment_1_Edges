@@ -20,7 +20,7 @@ namespace Assignment_1
 
         public void numberPalindrome()
         {
-
+            Console.Write("\n======================================================================\n");
             Console.Write("Enter a number to check if it is a Palindrome: ");
             int input = int.Parse(Console.ReadLine());
             SetNumber(input);
@@ -36,6 +36,7 @@ namespace Assignment_1
             else Console.WriteLine("Number is NOT a Palindrome :(");
 
             elements.Clear();
+            Console.Write("\n======================================================================\n");
         }
 
         public void ElementInList()

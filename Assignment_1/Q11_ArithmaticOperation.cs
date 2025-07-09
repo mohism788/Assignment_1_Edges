@@ -21,6 +21,7 @@ namespace Assignment_1
         public void Operation ()
         {
             decimal result;
+            Console.Write("\n======================================================================\n");
             Console.Write("Please enter first side number of the operation: ");
             decimal input_1 = decimal.Parse(Console.ReadLine());
 
@@ -39,18 +40,22 @@ namespace Assignment_1
                 case '+': 
                     result = number_1 + number_2;
                     Console.WriteLine($"{number_1} + {number_2} = {result}");
+                    Console.Write("\n======================================================================\n");
                     break;
                 case '-':
                     result = number_1 - number_2;
                     Console.WriteLine($"{number_1} - {number_2} = {result}");
+                    Console.Write("\n======================================================================\n");
                     break;
                 case'*':
                     result = number_1 * number_2;
                     Console.WriteLine($"{number_1} * {number_2} = {result}");
+                    Console.Write("\n======================================================================\n");
                     break;
                 case '/':
                     result = number_1 / number_2;
                     Console.WriteLine($"{number_1} / {number_2} = {result}");
+                    Console.Write("\n======================================================================\n");
                     break;
                     
             }

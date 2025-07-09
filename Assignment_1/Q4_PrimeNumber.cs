@@ -24,6 +24,7 @@ namespace Assignment_1
 
         public void PrimeFinder()
         {
+            Console.Write("\n======================================================================\n");
             Console.Write("Please enter range 1: ");
             int input_1 = int.Parse(Console.ReadLine());
             Console.Write("Please enter range 2: ");
@@ -49,8 +50,10 @@ namespace Assignment_1
             }
             else
             {
-                throw new Exception("This Range has no prime numbers");
+                Console.WriteLine("This Range has no prime numbers");
             }
+
+            Console.Write("\n======================================================================\n");
         }
 
         private bool IsPrime(int number)

@@ -3,7 +3,8 @@ using System;
 using Assignment_1;
 
 
-
+Menu menu = new Menu();
+menu.menu();
 
 /*Q1_Factorial q1_Factorial = new Q1_Factorial();
 

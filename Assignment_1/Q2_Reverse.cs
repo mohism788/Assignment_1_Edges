@@ -27,6 +27,7 @@ namespace Assignment_1
         {
             int input ;
             int reversed_number = 0;
+            Console.Write("\n======================================================================\n");
             Console.Write("Please enter number to be reversed: ");
             input = int.Parse(Console.ReadLine());
 
@@ -45,10 +46,12 @@ namespace Assignment_1
 
             else
             {
-                Console.WriteLine("Can't work with negative numbers :(");
+                Console.WriteLine("Can't work with negative numbers :( \n Please try again!");
             }
-            
-                
+
+            Console.Write("\n======================================================================\n");
+
+
         }
     }
 }

@@ -18,11 +18,12 @@ namespace Assignment_1
                 number = Number;
             }
             else
-                throw new Exception("Number must be positive integer");
+                Console.WriteLine("Number must be positive integer");
         }
 
         public void PerfectNumberChecker()
         {
+            Console.Write("\n======================================================================\n");
             Console.Write("Please enter the number to check: ");
             int input = int.Parse(Console.ReadLine());
             SetNumber(input);
@@ -46,6 +47,8 @@ namespace Assignment_1
 
             else
                 Console.WriteLine($"{number} is NOT a perfect number! :(");
+
+            Console.Write("\n======================================================================\n");
 
         }
 

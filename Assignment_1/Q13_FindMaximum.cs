@@ -21,12 +21,14 @@ namespace Assignment_1
             }
             else
                 Console.WriteLine("All numbers must be positive or zeros");
+
+
         }
 
 
         public void CheckMaximum()
         {
-            
+            Console.Write("\n======================================================================\n");
             Console.Write("Please enter first number: ");
             int input_1 = int.Parse(Console.ReadLine());
             Console.Write("Please enter second number: ");
@@ -47,7 +49,7 @@ namespace Assignment_1
             }
 
             Console.WriteLine($"Maximum number is {max}\n");
-
+            Console.Write("\n======================================================================\n");
 
 
         }

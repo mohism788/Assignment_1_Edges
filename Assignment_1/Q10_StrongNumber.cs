@@ -21,8 +21,10 @@ namespace Assignment_1
         int sum = 0;
         public void SeparateAndSumFactorials()
         {
-            Console.Write("\t\t\tThis program helps separating the digits of a number and sum these digits' factorial to eachother" +
-                "\n\t\t\tlike 1234 >> 1!+2!+3!+4!=33" +
+            Console.Write("\n======================================================================\n");
+            Console.Write("This program helps separating the digits of a number and sum these digits' factorial to eachother" +
+                "\nlike 1234 >> 1!+2!+3!+4!=33 ... If the sum of these factorials equals the original number before separation-" +
+                "\n-then it is a strong number, for example (145) is a strong number, try it :)"  +
                 "\n\nPlease enter a number: ");
             int input = int.Parse(Console.ReadLine());
             SetNumber(input);
@@ -36,13 +38,21 @@ namespace Assignment_1
 
             foreach (int item in separates)
             {
-               // int numberDash = factorial(number);
-               Console.WriteLine(factorial(item));
+                // int numberDash = factorial(number);
+                Console.WriteLine(factorial(item));
                 sum = sum + factorial(item);
             }
 
-            if (sum == number) Console.WriteLine($"{number} is a strong number :)");
-            else Console.WriteLine($"{number} is not a strong number :(");
+            if (sum == number)
+            {
+                Console.WriteLine($"{number} is a strong number :)");
+                Console.Write("\n======================================================================\n");
+            }
+            else
+            {
+                Console.WriteLine($"{number} is not a strong number :(");
+                Console.Write("\n======================================================================\n");
+            }
         }
 
 

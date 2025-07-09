@@ -42,9 +42,9 @@ namespace Assignment_1
         {
             int counter = 0;
             int sum = 0;
-            
-            
 
+
+            Console.Write("\n======================================================================\n");
             Console.Write("Please enter a positive number: ");
             int input = int.Parse(Console.ReadLine());
             setNumber(input);
@@ -70,6 +70,7 @@ namespace Assignment_1
             }
             else Console.WriteLine($"Sorry, {number} is not an Armstrong number");
 
+            Console.Write("\n======================================================================\n");
         }
     }
 }

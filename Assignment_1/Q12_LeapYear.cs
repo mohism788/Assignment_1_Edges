@@ -20,6 +20,7 @@ namespace Assignment_1
 
         public void CheckLeapYear()
         {
+            Console.Write("\n======================================================================\n");
             Console.WriteLine("Please enter a year to check if it's a leap year: ");
             int input = int.Parse(Console.ReadLine());
 
@@ -28,9 +29,11 @@ namespace Assignment_1
             if (isLeap(number) == true)
             {
                 Console.WriteLine($"The year {number} is a Leap Year :)");
+               
             }
             else
                 Console.WriteLine($"The year {number} is NOT a Leap Year :(");
+            Console.Write("\n======================================================================\n");
         }
         
         public bool isLeap(int num)

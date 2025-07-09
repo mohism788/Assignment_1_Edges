@@ -17,6 +17,7 @@ namespace Assignment_1
 
         public void Palindrome()
         {
+            Console.Write("\n======================================================================\n");
             Console.WriteLine("Enter a word to check if it is a Palindrome: ");
             string input = Console.ReadLine();
 
@@ -27,6 +28,8 @@ namespace Assignment_1
                 Console.WriteLine("Word is a Palindrome :)");
             }
             else Console.WriteLine("Word is NOT a Palindrome :(");
+
+            Console.Write("\n======================================================================\n");
         }
         static bool isPalindrome(string checkedWord)
         {

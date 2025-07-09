@@ -20,6 +20,7 @@ namespace Assignment_1
         }
         public void factorial()
         {
+            Console.Write("\n======================================================================\n");
             Console.Write("Please enter the number to get it's factorial: ");
             int input = int.Parse(Console.ReadLine());
             setNumber(input);
@@ -34,9 +35,11 @@ namespace Assignment_1
 
                 }
                 Console.WriteLine($"Thank you! Your result is {input} ");
+                Console.Write("\n======================================================================\n");
             }
             else Console.WriteLine("Sorry, can't work with negative numbers :(");
-            
+            Console.Write("\n======================================================================\n");
+
 
         }
 

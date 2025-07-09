@@ -22,6 +22,7 @@ namespace Assignment_1
 
         public void Pyramid()
         {
+            Console.Write("\n======================================================================\n");
             Console.Write("Please enter the number of rows: ");
             int input = int.Parse(Console.ReadLine());
 
@@ -43,6 +44,7 @@ namespace Assignment_1
                 }
                 Console.WriteLine();
             }
+            Console.Write("\n======================================================================\n");
         }
     }
 }

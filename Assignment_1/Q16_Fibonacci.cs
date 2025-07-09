@@ -25,6 +25,7 @@ namespace Assignment_1
 
         public void Fibonacci()
         {
+            Console.Write("\n======================================================================\n");
             Console.Write("Please enter the number of terms for Fibonacci: ");
             int input = int.Parse(Console.ReadLine());
 
@@ -48,6 +49,7 @@ namespace Assignment_1
             }
             Console.WriteLine();
             FibonacciList.Clear();
+            Console.Write("\n======================================================================\n");
 
         }
 

@@ -24,6 +24,7 @@ namespace Assignment_1
 
         public void CheckVowel()
         {
+            Console.Write("\n======================================================================\n");
             Console.Write("Please insert a letter to check: ");
             char input = Console.ReadKey().KeyChar;
             setChar(input);
@@ -37,7 +38,7 @@ namespace Assignment_1
             else
                 Console.WriteLine($"\n{letter} is a Consonant :)\n");
 
-
+            Console.Write("\n======================================================================\n");
 
         }
     }

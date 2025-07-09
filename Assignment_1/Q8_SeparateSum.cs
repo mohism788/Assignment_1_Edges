@@ -11,7 +11,7 @@ namespace Assignment_1
         private int number { get; set; }
 
         public void SetNumber(int num)
-        {   if (number > 0)
+        {   if (num > 0)
                 number = num;
             else Console.WriteLine("The number must be bigger than 0");
         }
@@ -20,8 +20,9 @@ namespace Assignment_1
         int sum = 0;    
         public void SeparateAndSum()
         {
-            Console.Write("\t\t\tThis program helps separating the digits of a number and sum these digits to eachother" +
-                "\n\t\t\tlike 1234 >> 1+2+3+4=10" +
+            Console.Write("\n======================================================================\n");
+            Console.Write("This program helps separating the digits of a number and sum these digits to eachother" +
+                "\nfor example 1234 >> 1+2+3+4=10" +
                 "\n\nPlease enter a number: ");
             int input = int.Parse(Console.ReadLine());
             SetNumber(input);
@@ -32,13 +33,14 @@ namespace Assignment_1
                 number /= 10;
             }
 
-            foreach (int number in separates)
+            foreach (int num in separates)
             {
-                sum+= number;
+                sum+= num;
             }
+            
 
             Console.WriteLine($"The Sum of the separate is {sum}");
-
+            Console.Write("\n======================================================================\n");
         }
 
 
