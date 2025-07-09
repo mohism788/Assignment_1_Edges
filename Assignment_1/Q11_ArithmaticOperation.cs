@@ -11,10 +11,10 @@ namespace Assignment_1
         private decimal number_1 { get; set; }
         private decimal number_2 { get; set; }
 
-        public void SetNumbers(decimal number_1, decimal number_2)
+        public void SetNumbers(decimal num_1, decimal num_2)
         {
-            this.number_1 = number_1;
-            this.number_2 = number_2;
+            number_1 = num_1;
+            number_2 = num_2;
         }
 
 

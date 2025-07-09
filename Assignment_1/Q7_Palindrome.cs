@@ -8,11 +8,11 @@ namespace Assignment_1
 {
     public class Q7_Palindrome
     {
-        private string word{ get; set; }
+        private string word { get; set; }
 
         public void SetWord(string word)
         {
-            if(word != null) this.word = word; 
+            if (word != null) this.word = word;
         }
 
         public void Palindrome()
@@ -20,7 +20,7 @@ namespace Assignment_1
             Console.WriteLine("Enter a word to check if it is a Palindrome: ");
             string input = Console.ReadLine();
 
-           
+
 
             if (isPalindrome(input) == true)
             {
@@ -38,21 +38,21 @@ namespace Assignment_1
                     cleaned += char.ToLower(c);
                 }
             }
-                int left = 0;
-                int right = cleaned.Length - 1;
+            int left = 0;
+            int right = cleaned.Length - 1;
 
-                while (left < right)
+            while (left < right)
+            {
+                if (cleaned[left] != cleaned[right])
                 {
-                    if (cleaned[left] != cleaned[right])
-                    {
-                        return false;
-                    }
-                    left++; 
-                    right--;
-
+                    return false;
                 }
-                return true;
-            
+                left++;
+                right--;
+
+            }
+            return true;
+
 
         }
     }

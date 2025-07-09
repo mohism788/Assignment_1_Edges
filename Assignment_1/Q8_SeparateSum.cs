@@ -10,9 +10,9 @@ namespace Assignment_1
     {
         private int number { get; set; }
 
-        public void SetNumber(int number)
+        public void SetNumber(int num)
         {   if (number > 0)
-                this.number = number;
+                number = num;
             else Console.WriteLine("The number must be bigger than 0");
         }
 

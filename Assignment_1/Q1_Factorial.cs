@@ -11,10 +11,10 @@ namespace Assignment_1
 
         private int number { get; set; }
 
-        public void setNumber(int number)
+        public void setNumber(int num)
         {
             if (number >= 0)
-                this.number = number;
+                number = num;
 
             else throw new Exception("Can't work with negative number :(");
         }

@@ -10,11 +10,11 @@ namespace Assignment_1
     {
         private int number { get; set; }
 
-        public void setNumber(int input)
+        public void setNumber(int num)
         {
             if (number > 0)
             {
-                number = input;
+                number = num;
             }
             else throw new Exception("Number must be positive!");
         }
