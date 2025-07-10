@@ -39,7 +39,7 @@ namespace Assignment_1
             foreach (int item in separates)
             {
                 // int numberDash = factorial(number);
-                Console.WriteLine(factorial(item));
+                Console.WriteLine($"!{item} = {factorial(item)}");
                 sum = sum + factorial(item);
             }
 
@@ -53,6 +53,9 @@ namespace Assignment_1
                 Console.WriteLine($"{number} is not a strong number :(");
                 Console.Write("\n======================================================================\n");
             }
+
+            separates.Clear();
+            sum = 0;
         }
 
 

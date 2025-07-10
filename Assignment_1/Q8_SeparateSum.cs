@@ -17,7 +17,7 @@ namespace Assignment_1
         }
 
         List<int> separates = new List<int>();
-        int sum = 0;    
+        int sum = 0;
         public void SeparateAndSum()
         {
             Console.Write("\n======================================================================\n");
@@ -26,9 +26,9 @@ namespace Assignment_1
                 "\n\nPlease enter a number: ");
             int input = int.Parse(Console.ReadLine());
             SetNumber(input);
+            
             while (number != 0)
             {
-                
                 separates.Add(number % 10);
                 number /= 10;
             }
@@ -37,10 +37,12 @@ namespace Assignment_1
             {
                 sum+= num;
             }
-            
 
             Console.WriteLine($"The Sum of the separate is {sum}");
             Console.Write("\n======================================================================\n");
+
+            sum = 0;
+            separates.Clear();
         }
 
 

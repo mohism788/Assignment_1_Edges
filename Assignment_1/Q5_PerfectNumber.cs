@@ -24,7 +24,7 @@ namespace Assignment_1
         public void PerfectNumberChecker()
         {
             Console.Write("\n======================================================================\n");
-            Console.Write("Please enter the number to check: ");
+            Console.Write("Please enter the number to check for a Perfect number: ");
             int input = int.Parse(Console.ReadLine());
             SetNumber(input);
             List<int> Divisors= new List<int>();

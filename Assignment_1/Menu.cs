@@ -47,7 +47,8 @@ namespace Assignment_1
 
             while (true)
             {
-                Console.Write(">>> Please enter the number of the Question you want to test: ");
+                Console.Write("     Available questions are from 1 to 21" +
+                    "\n>>> Please enter the number of the Question you want to test: ");
                 int input = int.Parse(Console.ReadLine());
                 setChoice(input);
                 switch (choice)

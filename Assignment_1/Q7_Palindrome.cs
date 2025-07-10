@@ -21,13 +21,13 @@ namespace Assignment_1
             Console.WriteLine("Enter a word to check if it is a Palindrome: ");
             string input = Console.ReadLine();
 
+            SetWord(input);
 
-
-            if (isPalindrome(input) == true)
+            if (isPalindrome(word) == true)
             {
-                Console.WriteLine("Word is a Palindrome :)");
+                Console.WriteLine($"{word} is a Palindrome :)");
             }
-            else Console.WriteLine("Word is NOT a Palindrome :(");
+            else Console.WriteLine($"{word} is NOT a Palindrome :(");
 
             Console.Write("\n======================================================================\n");
         }

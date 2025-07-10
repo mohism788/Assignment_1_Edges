@@ -14,7 +14,7 @@ namespace Assignment_1
         List<int> FibonacciList = new List<int>();
         public void setNumber(int num)
         {
-            if (num > 0)
+            if (num >= 0)
             {
                 number = num;
             }
@@ -26,14 +26,14 @@ namespace Assignment_1
         public void Fibonacci()
         {
             Console.Write("\n======================================================================\n");
-            Console.Write("Please enter the number of terms for Fibonacci: ");
+            Console.Write("Please enter the number of the term You want to stop Fabonnaci at, starting from term number 0: ");
             int input = int.Parse(Console.ReadLine());
 
             setNumber(input);
             int nextFib = 1;
 
-            FibonacciList.Add(0);
-            for (int i = 0; i < number-1 ; i++)
+            FibonacciList.Add(1);
+            for (int i = 0; i < number ; i++)
             {
                 FibonacciList.Add(nextFib);
                 nextFib = nextFib + FibonacciList[i];

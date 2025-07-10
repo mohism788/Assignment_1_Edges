@@ -25,7 +25,7 @@ namespace Assignment_1
         public void CheckVowel()
         {
             Console.Write("\n======================================================================\n");
-            Console.Write("Please insert a letter to check: ");
+            Console.Write("Please insert a letter to check if its a Vowel or Consonant: ");
             char input = Console.ReadKey().KeyChar;
             setChar(input);
             

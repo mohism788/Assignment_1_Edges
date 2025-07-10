@@ -12,11 +12,11 @@ namespace Assignment_1
 
         public void setNumber(int num)
         {
-            if (number > 0)
+            if (num > 0)
             {
                 number = num;
             }
-            else throw new Exception("Number must be positive!");
+            else Console.WriteLine("Number must be positive!");
         }
 
         public static int Power(int baseNumber, int exponent)
@@ -42,26 +42,26 @@ namespace Assignment_1
         {
             int counter = 0;
             int sum = 0;
-
+            int carry;
 
             Console.Write("\n======================================================================\n");
             Console.Write("Please enter a positive number: ");
             int input = int.Parse(Console.ReadLine());
             setNumber(input);
+            carry = number;
 
-            while (number > 0)
+            while (carry > 0)
             {
-                number = number / 10;
+                carry = carry / 10;
                 counter++;
             }
-            int[] collect = new int[counter];
-
-            for (int i = 0; i <= counter; i++)
+           
+            carry = number;
+            for (int i = 0; i < counter; i++)
             {
-                setNumber(input);
-                input = number % 10; // 153%10 = 3
-                collect[i] = input;
-                sum += Power(collect[i],counter);
+                carry = carry % 10; // 153%10 = 3
+                
+                sum += Power(carry, counter);
             }
 
             if (sum == number)
