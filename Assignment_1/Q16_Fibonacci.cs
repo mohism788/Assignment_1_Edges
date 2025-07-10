@@ -14,7 +14,7 @@ namespace Assignment_1
         List<int> FibonacciList = new List<int>();
         public void setNumber(int num)
         {
-            if (num >= 0)
+            if (num > 0)
             {
                 number = num;
             }
@@ -32,7 +32,7 @@ namespace Assignment_1
             setNumber(input);
             int nextFib = 1;
 
-            FibonacciList.Add(1);
+            FibonacciList.Add(0);
             for (int i = 0; i < number ; i++)
             {
                 FibonacciList.Add(nextFib);
